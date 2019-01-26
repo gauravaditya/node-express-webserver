@@ -32,7 +32,6 @@ hbs.registerHelper('shoutIt', (message) => {
     return message.toUpperCase();
 });
 app.get('/', (req, res) => {
-    // res.send('<h1>Hello Express!</h1>');
     res.render('home.hbs', {
         pageTitle: 'Welcome Page',
         currentYear: new Date().getFullYear(),
